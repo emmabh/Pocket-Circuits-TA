@@ -36,10 +36,6 @@
             android:name=".Lab8Activity"
             android:label="@string/title_activity_lab8"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".CriticallyDamped"
-            android:label="@string/title_activity_critically_damped"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Lab2Activity" />
         <activity
             android:name=".VoltageDivider"
@@ -58,7 +54,8 @@
         <activity android:name=".Multimeter" />
         <activity android:name=".PowerSource" />
         <activity android:name=".TheveninDiagram" />
-        <activity android:name=".Lab6Activity"></activity>
+        <activity android:name=".Lab6Activity" />
+        <activity android:name=".CriticallyDamped"></activity>
     </application>
 
 </manifest>
