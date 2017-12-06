@@ -60,7 +60,7 @@ public class EquivalentResistance extends AppCompatActivity {
             else{
                 double intermediate_result = 1/n1+1/n2;
                 result = 1/intermediate_result;
-                eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result," Ohms"));
+                eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result)+" Ohms");
             }
         }
     }
@@ -84,7 +84,7 @@ public class EquivalentResistance extends AppCompatActivity {
             n2=Double.valueOf(eqr_input2.getText().toString());
             result = n1+n2;
 
-            eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result," Ohms"));
+            eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result) +" Ohms");
         }
     }
 }

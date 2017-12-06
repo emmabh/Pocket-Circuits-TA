@@ -47,7 +47,7 @@ public class TimeConstant extends AppCompatActivity {
             n1=Double.valueOf(rc_input1.getText().toString());
             n2=Double.valueOf(rc_input2.getText().toString());
             result = n1*n2;
-            rc_result.setText(String.format("Time constant: %.3f",result," seconds"));
+            rc_result.setText(String.format("Time constant: %.3f",result) + " seconds");
         }
     }
 }

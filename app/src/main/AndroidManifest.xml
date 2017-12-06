@@ -55,7 +55,10 @@
         <activity android:name=".PowerSource" />
         <activity android:name=".TheveninDiagram" />
         <activity android:name=".Lab6Activity" />
-        <activity android:name=".CriticallyDamped"></activity>
+        <activity android:name=".CriticallyDamped" />
+        <activity android:name=".LaunchPad" />
+        <activity android:name=".BreadBoard" />
+        <activity android:name=".Potentiometer"></activity>
     </application>
 
 </manifest>

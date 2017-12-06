@@ -24,19 +24,35 @@
         android:id="@+id/lab5_inverting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Inverting Op Amp Calculator"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/diagram" />
 
     <Button
         android:id="@+id/lab5_noninverting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Non-Inverting Op Amp Calculator"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lab5_inverting" />
+
+    <Button
+        android:id="@+id/diagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Op Amp Pin Out Diagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 </android.support.constraint.ConstraintLayout>

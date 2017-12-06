@@ -21,5 +21,25 @@ public class Lab4Activity extends AppCompatActivity {
             }
 
         });
+
+        Button calc = (Button) findViewById(R.id.lab4_noninvert);
+        calc.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent calc = new Intent(getApplicationContext(), NonInverting.class);
+                startActivity(calc);
+            }
+
+        });
+
+        Button pot = (Button) findViewById(R.id.pot);
+        pot.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent pot = new Intent(getApplicationContext(), Potentiometer.class);
+                startActivity(pot);
+            }
+
+        });
     }
 }

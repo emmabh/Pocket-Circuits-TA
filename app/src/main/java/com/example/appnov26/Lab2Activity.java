@@ -43,6 +43,16 @@ public class Lab2Activity extends AppCompatActivity {
 
         });
 
+        Button lab2_bread = (Button) findViewById(R.id.lab2_bread);
+        lab2_bread.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent bread = new Intent(getApplicationContext(), BreadBoard.class);
+                startActivity(bread);
+            }
+
+        });
+
 
     }
 }

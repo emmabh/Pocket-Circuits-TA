@@ -21,14 +21,6 @@ public class Lab1Activity extends AppCompatActivity {
                 startActivity(lab1VIRintent);
             }
         });
-        Button lab1EQR = (Button) findViewById(R.id.lab1_eqr);
-        lab1EQR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent lab1EQRintent = new Intent(getApplicationContext(), EquivalentResistance.class);
-                startActivity(lab1EQRintent);
-            }
-        });
 
         Button lab1LED = (Button) findViewById(R.id.lab1_led);
         lab1LED.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +37,15 @@ public class Lab1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent lab1multiintent = new Intent(getApplicationContext(), Multimeter.class);
                 startActivity(lab1multiintent);
+            }
+        });
+
+        Button bread = (Button) findViewById(R.id.bread);
+        bread.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent breadintent = new Intent(getApplicationContext(), BreadBoard.class);
+                startActivity(breadintent);
             }
         });
     }

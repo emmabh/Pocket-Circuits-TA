@@ -62,7 +62,7 @@ public class NonInverting extends AppCompatActivity {
                 n1 = Double.valueOf(ni_input1.getText().toString());
                 result = 1+ n3/n2;
                 double voutresult = n1*result;
-                ni_result.setText(String.format("Gain: %.3f",result) + String.format("\nVout: %.3f",voutresult," V"));
+                ni_result.setText(String.format("Gain: %.3f",result) + String.format("\nVout: %.3f",voutresult) + " V");
             }
 
         }

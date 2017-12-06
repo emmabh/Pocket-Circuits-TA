@@ -31,5 +31,15 @@ public class Lab5Activity extends AppCompatActivity {
             }
 
         });
+
+        Button diagram= (Button) findViewById(R.id.diagram);
+        diagram.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent diagram = new Intent(getApplicationContext(), OpAmpDiagram.class);//change to non
+                startActivity(diagram);
+            }
+
+        });
     }
 }

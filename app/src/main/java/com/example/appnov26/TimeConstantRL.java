@@ -50,7 +50,7 @@ public class TimeConstantRL extends AppCompatActivity {
             }
             else{
                 result = n2/n1;
-                rl_result.setText(String.format("Time constant: %.3f",result," seconds"));
+                rl_result.setText(String.format("Time constant: %.3f",result) + " seconds");
             }
         }
     }

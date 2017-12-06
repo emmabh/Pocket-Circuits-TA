@@ -15,8 +15,6 @@ public class OpAmpMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_op_amp_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         Button inverting = (Button) findViewById(R.id.OpAmp_Inverting);
         inverting.setOnClickListener(new View.OnClickListener(){

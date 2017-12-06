@@ -12,16 +12,16 @@ public class Lab6Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab6);
-/*
+
         Button lab6_arduino= (Button) findViewById(R.id.lab6_arduino);
         lab6_arduino.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent lab6_arduinointent = new Intent(getApplicationContext(), Arduino.class);//change to non
+                Intent lab6_arduinointent = new Intent(getApplicationContext(), LaunchPad.class);//change to non
                 startActivity(lab6_arduinointent);
             }
 
         });
-*/
+
     }
 }

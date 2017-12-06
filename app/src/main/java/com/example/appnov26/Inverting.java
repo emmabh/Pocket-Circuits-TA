@@ -61,7 +61,7 @@ public class Inverting extends AppCompatActivity {
                 n1 = Double.valueOf(i_input1.getText().toString());
                 result = -n3/n2;
                 double voutresult = n1*result;
-                i_result.setText(String.format("Gain: %.3f",result)+String.format("\nVout: %.3f",voutresult," V"));
+                i_result.setText(String.format("Gain: %.3f",result)+String.format("\nVout: %.3f",voutresult) +" V");
             }
 
         }
