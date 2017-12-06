@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppNov26</string>
+    <string name="app_name">PocketCircuitsTa</string>
     <string name="title_activity_leddiagram">LEDDiagram</string>
     <string name="title_activity_lab8">Lab8Activity</string>
     <string name="title_activity_critically_damped">CriticallyDamped</string>
