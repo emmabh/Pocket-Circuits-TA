@@ -55,13 +55,13 @@ public class Inverting extends AppCompatActivity {
                 i_result.setText("R1 cannot be zero");
             else if(nf1==1){
                 result = -n3/n2;
-                i_result.setText("Gain: "+result);
+                i_result.setText(String.format("Gain: %.3f",result));
             }
             else{
                 n1 = Double.valueOf(i_input1.getText().toString());
                 result = -n3/n2;
                 double voutresult = n1*result;
-                i_result.setText("Gain: "+result+"\nVout: "+voutresult+" V");
+                i_result.setText(String.format("Gain: %.3f",result)+String.format("\nVout: %.3f",voutresult," V"));
             }
 
         }

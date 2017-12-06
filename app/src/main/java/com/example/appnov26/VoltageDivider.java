@@ -65,7 +65,7 @@ public class VoltageDivider extends AppCompatActivity {
                 vd_result.setText("Vout = " + V2 + " Volts");
             } else {
                 V2 = (R2 / denom) * V;
-                vd_result.setText("Vout " + V2 + "Volts");
+                vd_result.setText(String.format("Vout = %.3f", V2 ,"Volts"));
             }
         }
 

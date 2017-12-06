@@ -54,7 +54,7 @@ public class CriticallyDamped extends AppCompatActivity {
                 cd_result.setText("Critically damped R= 0.0 Ohms");
             } else {
                 R = sqrt((4 * L) / C);
-                cd_result.setText("Critically damped R = " + R + " Ohms");
+                cd_result.setText(String.format("Critically damped R = %.3f", R) + " Ohms");
             }
         }
 
