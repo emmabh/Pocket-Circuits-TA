@@ -35,7 +35,8 @@
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginLeft="72dp" />
 
     <EditText
         android:id="@+id/et_eqr_input2"
@@ -50,7 +51,8 @@
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginRight="56dp" />
 
     <Button
         android:id="@+id/bt_paral_calculate"
@@ -62,15 +64,17 @@
         android:text="Parallel "
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/et_eqr_input2" />
+        app:layout_constraintTop_toBottomOf="@+id/et_eqr_input2"
+        android:layout_marginLeft="22dp" />
 
     <TextView
         android:id="@+id/eqr_tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="532dp"
+        android:fontFamily="@font/allerta_stencil"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.501"
@@ -88,7 +92,8 @@
         android:text="Series"
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/bt_paral_calculate" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_paral_calculate"
+        android:layout_marginLeft="22dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -98,7 +103,8 @@
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_eqr_input1"
-        app:srcCompat="@drawable/rparallel2" />
+        app:srcCompat="@drawable/rparallel2"
+        android:layout_marginLeft="24dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -107,7 +113,8 @@
         android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/rseries2" />
+        app:srcCompat="@drawable/rseries2"
+        android:layout_marginLeft="24dp" />
 
 
 </android.support.constraint.ConstraintLayout>

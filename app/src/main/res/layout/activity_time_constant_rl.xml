@@ -22,13 +22,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:backgroundTint="@android:color/holo_green_light"
         android:id="@+id/rl_input1"
         android:layout_width="116dp"
         android:layout_height="44dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
+        android:fontFamily="@font/allerta_stencil"
         android:hint="R, Ohms"
         android:inputType="numberDecimal"
         android:textAlignment="center"
@@ -37,13 +38,14 @@
         android:layout_marginLeft="50dp" />
 
     <EditText
-        android:backgroundTint="@android:color/holo_green_light"
         android:id="@+id/rl_input2"
         android:layout_width="116dp"
         android:layout_height="44dp"
         android:layout_marginEnd="50dp"
         android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
+        android:fontFamily="@font/allerta_stencil"
         android:hint="L, Henries"
         android:inputType="numberDecimal"
         android:textAlignment="center"
@@ -64,6 +66,7 @@
         android:id="@+id/rl_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Calculate"
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -75,7 +78,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/allerta_stencil"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"

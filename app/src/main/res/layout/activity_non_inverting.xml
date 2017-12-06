@@ -46,7 +46,8 @@
         android:inputType="numberSigned|numberDecimal"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/ni_input2" />
+        app:layout_constraintEnd_toStartOf="@+id/ni_input2"
+        android:layout_marginRight="30dp" />
 
     <EditText
         android:id="@+id/ni_input2"
@@ -75,7 +76,8 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/ni_input2" />
+        app:layout_constraintStart_toEndOf="@+id/ni_input2"
+        android:layout_marginLeft="30dp" />
 
     <Button
         android:id="@+id/ni_calculate"
@@ -93,8 +95,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="452dp"
+        android:fontFamily="@font/allerta_stencil"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.501"
