@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-/*
+
         Button lab6 = (Button) findViewById(R.id.buttonlab6);
         lab6.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-*/
+
         Button lab7 = (Button) findViewById(R.id.buttonlab7);
         lab7.setOnClickListener(new View.OnClickListener(){
             @Override

@@ -57,7 +57,8 @@
         <activity android:name=".Lab4Activity" />
         <activity android:name=".Multimeter" />
         <activity android:name=".PowerSource" />
-        <activity android:name=".TheveninDiagram"></activity>
+        <activity android:name=".TheveninDiagram" />
+        <activity android:name=".Lab6Activity"></activity>
     </application>
 
 </manifest>

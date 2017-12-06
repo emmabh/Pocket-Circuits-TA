@@ -12,6 +12,7 @@ public class Lab5Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab5);
+
         Button lab5_inverting= (Button) findViewById(R.id.lab5_inverting);
         lab5_inverting.setOnClickListener(new View.OnClickListener(){
             @Override
