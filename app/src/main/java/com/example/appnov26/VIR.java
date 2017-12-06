@@ -50,7 +50,7 @@ public class VIR extends AppCompatActivity {
             n1 = Double.valueOf(input2.getText().toString());
             n2 = Double.valueOf(input3.getText().toString());
             result = n1*n2;
-            tv_result.setText("Voltage: "+result+" V");
+            tv_result.setText(String.format("Voltage: %.3f", result,"V"));
 
         }
         else if(isnotfilled2){
@@ -61,7 +61,7 @@ public class VIR extends AppCompatActivity {
             }
             else{
                 result = n1/n2;
-                tv_result.setText("Current: "+result+" A");
+                tv_result.setText(String.format("Current: %.3f",result, "A"));
             }
 
         }
@@ -73,7 +73,7 @@ public class VIR extends AppCompatActivity {
             }
             else {
                 result = n1 / n2;
-                tv_result.setText("Resistance: " + result + " Ohms");
+                tv_result.setText(String.format("Resistance: %.3f", result, "Ohms"));
             }
         }
 

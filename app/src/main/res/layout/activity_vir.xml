@@ -17,7 +17,7 @@
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
         android:inputType="textPersonName"
-        android:text="Thevenin Calculations"
+        android:text="V=IR Calculator"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
