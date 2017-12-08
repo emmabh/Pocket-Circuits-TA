@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 
 public class VoltageDivider extends AppCompatActivity {
@@ -58,6 +60,8 @@ public class VoltageDivider extends AppCompatActivity {
             V = Double.valueOf(vd_input3.getText().toString());
             double denom = R1 + R2;
             if (R1 == 0) {
+                DecimalFormat df = new DecimalFormat("#.#########");
+                V= Double.valueOf(df.format(V));
                 vd_result.setText("Vout = " + V + " Volts");
             } else if (R2 == 0) {
                 V1 = (R1 / denom) * V;
@@ -65,7 +69,9 @@ public class VoltageDivider extends AppCompatActivity {
                 vd_result.setText("Vout = " + V2 + " Volts");
             } else {
                 V2 = (R2 / denom) * V;
-                vd_result.setText(String.format("Vout = %.3f", V2) + " Volts");
+                DecimalFormat df = new DecimalFormat("#.#########");
+                V2= Double.valueOf(df.format(V2));
+                vd_result.setText("Vout = "+ V2 + " Volts");
             }
         }
 

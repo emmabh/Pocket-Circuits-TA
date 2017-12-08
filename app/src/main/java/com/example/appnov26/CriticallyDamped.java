@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 import static java.lang.Math.sqrt;
 
@@ -51,10 +53,12 @@ public class CriticallyDamped extends AppCompatActivity {
             L = Double.valueOf(cd_input1.getText().toString());
             C = Double.valueOf(cd_input2.getText().toString());
             if (L == 0 || C == 0) {
-                cd_result.setText("Critically damped R= 0.0 Ohms");
+                cd_result.setText("Critically damped R = 0.0 Ohms");
             } else {
                 R = sqrt((4 * L) / C);
-                cd_result.setText(String.format("Critically damped R = %.3f", R) + " Ohms");
+                DecimalFormat df = new DecimalFormat("#.#########");
+                R= Double.valueOf(df.format(R));
+                cd_result.setText("Critically damped R = "+R+" Ohms");
             }
         }
 

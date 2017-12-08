@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 
 public class EquivalentResistance extends AppCompatActivity {
@@ -60,7 +62,9 @@ public class EquivalentResistance extends AppCompatActivity {
             else{
                 double intermediate_result = 1/n1+1/n2;
                 result = 1/intermediate_result;
-                eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result)+" Ohms");
+                DecimalFormat df = new DecimalFormat("#.#########");
+                result= Double.valueOf(df.format(result));
+                eqr_tv_result.setText("Eq. Resistance = "+result+" Ohms");
             }
         }
     }
