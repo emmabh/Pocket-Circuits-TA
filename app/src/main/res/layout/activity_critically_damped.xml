@@ -10,33 +10,33 @@
         android:id="@+id/cd_input1"
         android:layout_width="90dp"
         android:layout_height="45dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
-        android:hint="L, Henries"
+        android:hint="Henries"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView30"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        android:layout_marginLeft="36dp" />
+        android:layout_marginRight="50dp" />
 
     <EditText
         android:id="@+id/cd_input2"
         android:layout_width="90dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
-        android:hint="C, Farads"
+        android:hint="Farads"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        android:layout_marginRight="36dp" />
+        android:layout_marginRight="50dp" />
 
     <Button
         android:id="@+id/cd_calculate"
@@ -96,4 +96,34 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:layout_constraintVertical_bias="0.914"
         app:srcCompat="@drawable/rlccircuit" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="L:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cd_input1"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="C:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cd_input2"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        android:layout_marginRight="5dp" />
 </android.support.constraint.ConstraintLayout>

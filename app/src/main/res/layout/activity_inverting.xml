@@ -26,7 +26,7 @@
         android:id="@+id/imageView"
         android:layout_width="254dp"
         android:layout_height="224dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="145dp"
         android:adjustViewBounds="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -38,47 +38,50 @@
         android:id="@+id/i_input1"
         android:layout_width="90dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
         android:gravity="end"
-        android:hint="Vin, Volts"
+        android:hint="Volts"
         android:inputType="numberSigned|numberDecimal"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/i_input2"
-        android:layout_marginRight="30dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginRight="50dp" />
 
     <EditText
         android:id="@+id/i_input2"
         android:layout_width="90dp"
         android:layout_height="45dp"
+        android:layout_marginEnd="115dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
-        android:hint="Rin, Ohms"
+        android:hint="Ohms"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="115dp" />
 
     <EditText
         android:id="@+id/i_input3"
         android:layout_width="90dp"
         android:layout_height="45dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
         android:gravity="start"
-        android:hint="Rf, Ohms"
+        android:hint="Ohms"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/i_input2"
-        android:layout_marginLeft="30dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginRight="35dp" />
 
     <Button
         android:id="@+id/i_calculate"
@@ -95,7 +98,7 @@
         android:id="@+id/i_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="456dp"
+        android:layout_marginTop="512dp"
         android:fontFamily="@font/allerta_stencil"
         android:textAlignment="center"
         android:textColor="@android:color/holo_green_light"
@@ -110,6 +113,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/allerta_stencil"
         android:text="Calculates gain. If Vin provided, calculates Vout."
         android:textAlignment="center"
@@ -117,5 +121,50 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Vin:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/i_input1"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Rf:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/i_input3"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Rin:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/i_input2"
+        android:layout_marginRight="5dp" />
 
 </android.support.constraint.ConstraintLayout>
