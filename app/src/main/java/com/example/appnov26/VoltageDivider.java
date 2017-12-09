@@ -62,16 +62,16 @@ public class VoltageDivider extends AppCompatActivity {
             if (R1 == 0) {
                 DecimalFormat df = new DecimalFormat("#.#########");
                 V= Double.valueOf(df.format(V));
-                vd_result.setText("Vout: " + V + " Volts");
+                vd_result.setText("Vout: " + V + " V");
             } else if (R2 == 0) {
                 V1 = (R1 / denom) * V;
                 V2 = 0;
-                vd_result.setText("Vout: " + V2 + " Volts");
+                vd_result.setText("Vout: " + V2 + " V");
             } else {
                 V2 = (R2 / denom) * V;
                 DecimalFormat df = new DecimalFormat("#.#########");
                 V2= Double.valueOf(df.format(V2));
-                vd_result.setText("Vout: "+ V2 + " Volts");
+                vd_result.setText("Vout: "+ V2 + " V");
             }
         }
 
