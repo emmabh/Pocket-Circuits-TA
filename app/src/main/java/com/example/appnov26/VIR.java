@@ -79,9 +79,16 @@ public class VIR extends AppCompatActivity {
             }
             else {
                 result = n1 / n2;
-                DecimalFormat df = new DecimalFormat("#.#########");
-                result= Double.valueOf(df.format(result));
-                tv_result.setText("Resistance: "+ result+ "Ohms");
+                if(n1<0&&n2>0)
+                {
+                    tv_result.setText("Voltage and current must match sign");
+                }
+                else
+                {
+                    DecimalFormat df = new DecimalFormat("#.#########");
+                    result= Double.valueOf(df.format(result));
+                    tv_result.setText("Resistance: "+ result+ " Ohms");
+                }
             }
         }
 

@@ -69,7 +69,7 @@ public class NonInverting extends AppCompatActivity {
                 DecimalFormat df = new DecimalFormat("#.#########");
                 result= Double.valueOf(df.format(result));
                 voutresult= Double.valueOf(df.format(voutresult));
-                ni_result.setText("Gain: "+result + "\nVout: %.3f"+voutresult + " V");
+                ni_result.setText("Gain: "+result + "\nVout: "+voutresult + " V");
             }
 
         }

@@ -87,8 +87,9 @@ public class EquivalentResistance extends AppCompatActivity {
             n1=Double.valueOf(eqr_input1.getText().toString());
             n2=Double.valueOf(eqr_input2.getText().toString());
             result = n1+n2;
-
-            eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result) +" Ohms");
+            DecimalFormat df = new DecimalFormat("#.#########");
+            result= Double.valueOf(df.format(result));
+            eqr_tv_result.setText("Eq. Resistance = "+result+" Ohms");
         }
     }
 }
