@@ -11,13 +11,13 @@
         android:id="@+id/textView17"
         android:layout_width="40dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="441dp"
         android:layout_marginStart="123dp"
         android:fontFamily="@font/allerta_stencil"
         android:text="R:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_green_light"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/et_input1"
         android:layout_marginLeft="123dp" />
 
@@ -25,12 +25,15 @@
         android:id="@+id/textView18"
         android:layout_width="40dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="441dp"
+        android:layout_marginStart="19dp"
         android:fontFamily="@font/allerta_stencil"
         android:text="I:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_green_light"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        tools:layout_editor_absoluteX="139dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_input1"
+        android:layout_marginLeft="19dp" />
 
     <TextView
         android:id="@+id/editText"
@@ -137,12 +140,14 @@
         android:layout_width="40dp"
         android:layout_height="46dp"
         android:layout_marginBottom="441dp"
+        android:layout_marginStart="22dp"
         android:fontFamily="@font/allerta_stencil"
         android:text="V:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="26dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="22dp" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -7,6 +7,34 @@
     tools:context="com.example.appnov26.TimeConstant">
 
     <TextView
+        android:id="@+id/textView23"
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="386dp"
+        android:layout_marginStart="204dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="C:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="204dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="386dp"
+        android:layout_marginStart="36dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="R:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="36dp" />
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +59,7 @@
         android:fontFamily="@font/allerta_stencil"
         android:hint="R, Ohms"
         android:inputType="numberDecimal"
+        android:text="Ohms"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -47,6 +76,7 @@
         android:fontFamily="@font/allerta_stencil"
         android:hint="C, Farads"
         android:inputType="numberDecimal"
+        android:text="Farads"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
