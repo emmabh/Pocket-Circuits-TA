@@ -53,7 +53,7 @@ public class CriticallyDamped extends AppCompatActivity {
             L = Double.valueOf(cd_input1.getText().toString());
             C = Double.valueOf(cd_input2.getText().toString());
             if (L == 0 || C == 0) {
-                cd_result.setText("Critically damped R = 0.0 Ohms");
+                cd_result.setText("Neither L nor C can be zero");
             } else {
                 R = sqrt((4 * L) / C);
                 DecimalFormat df = new DecimalFormat("#.#########");
