@@ -58,7 +58,7 @@ public class CriticallyDamped extends AppCompatActivity {
                 R = sqrt((4 * L) / C);
                 DecimalFormat df = new DecimalFormat("#.#########");
                 R= Double.valueOf(df.format(R));
-                cd_result.setText("Critically damped R = "+R+" Ohms");
+                cd_result.setText("Critically damped R: "+R+" Ohms");
             }
         }
 
