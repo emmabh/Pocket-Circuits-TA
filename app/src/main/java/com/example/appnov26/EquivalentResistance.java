@@ -64,7 +64,7 @@ public class EquivalentResistance extends AppCompatActivity {
                 result = 1/intermediate_result;
                 DecimalFormat df = new DecimalFormat("#.#########");
                 result= Double.valueOf(df.format(result));
-                eqr_tv_result.setText("Eq. Resistance: "+result+" Ohms");
+                eqr_tv_result.setText("Parallel Eq. Resistance: "+result+" Ohms");
             }
         }
     }
@@ -89,7 +89,7 @@ public class EquivalentResistance extends AppCompatActivity {
             result = n1+n2;
             DecimalFormat df = new DecimalFormat("#.#########");
             result= Double.valueOf(df.format(result));
-            eqr_tv_result.setText("Eq. Resistance: "+result+" Ohms");
+            eqr_tv_result.setText("Series Eq. Resistance: "+result+" Ohms");
         }
     }
 }
