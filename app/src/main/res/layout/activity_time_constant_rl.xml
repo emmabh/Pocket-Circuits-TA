@@ -31,15 +31,14 @@
         android:layout_marginEnd="5dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/allerta_stencil"
-        android:text="V:"
+        android:text="R:"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         android:textColor="@android:color/holo_green_light"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/rl_input1"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:targetApi="lollipop"
-        android:layout_marginRight="5dp" />
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView5"
