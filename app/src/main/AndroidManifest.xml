@@ -31,7 +31,8 @@
         <activity
             android:name=".LEDDiagram"
             android:label="@string/title_activity_leddiagram"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Lab8Activity"
             android:label="@string/title_activity_lab8"
@@ -49,16 +50,23 @@
             android:name=".TheveninEquiv"
             android:label="@string/title_activity_thevenin_equiv"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".OpAmpDiagram" />
+        <activity android:name=".OpAmpDiagram"
+            android:screenOrientation="portrait" />
         <activity android:name=".Lab4Activity" />
-        <activity android:name=".Multimeter" />
-        <activity android:name=".PowerSource" />
-        <activity android:name=".TheveninDiagram" />
+        <activity android:name=".Multimeter"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PowerSource"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TheveninDiagram"
+            android:screenOrientation="portrait" />
         <activity android:name=".Lab6Activity" />
         <activity android:name=".CriticallyDamped" />
-        <activity android:name=".LaunchPad" />
-        <activity android:name=".BreadBoard" />
-        <activity android:name=".Potentiometer"></activity>
+        <activity android:name=".LaunchPad"
+            android:screenOrientation="portrait" />
+        <activity android:name=".BreadBoard"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Potentiometer"
+            android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>

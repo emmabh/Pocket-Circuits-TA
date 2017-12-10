@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 
 public class VIR extends AppCompatActivity {
@@ -50,7 +52,9 @@ public class VIR extends AppCompatActivity {
             n1 = Double.valueOf(input2.getText().toString());
             n2 = Double.valueOf(input3.getText().toString());
             result = n1*n2;
-            tv_result.setText(String.format("Voltage: %.3f", result,"V"));
+            DecimalFormat df = new DecimalFormat("#.#########");
+            result= Double.valueOf(df.format(result));
+            tv_result.setText("Voltage: "+ result+" V");
 
         }
         else if(isnotfilled2){
@@ -61,7 +65,9 @@ public class VIR extends AppCompatActivity {
             }
             else{
                 result = n1/n2;
-                tv_result.setText(String.format("Current: %.3f",result, "A"));
+                DecimalFormat df = new DecimalFormat("#.#########");
+                result= Double.valueOf(df.format(result));
+                tv_result.setText("Current: "+result +" A");
             }
 
         }
@@ -73,7 +79,16 @@ public class VIR extends AppCompatActivity {
             }
             else {
                 result = n1 / n2;
-                tv_result.setText(String.format("Resistance: %.3f", result, "Ohms"));
+                if(n1<0&&n2>0)
+                {
+                    tv_result.setText("Voltage and current must match sign");
+                }
+                else
+                {
+                    DecimalFormat df = new DecimalFormat("#.#########");
+                    result= Double.valueOf(df.format(result));
+                    tv_result.setText("Resistance: "+ result+ " Ohms");
+                }
             }
         }
 

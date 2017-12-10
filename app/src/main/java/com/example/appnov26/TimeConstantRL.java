@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 
 public class TimeConstantRL extends AppCompatActivity {
@@ -50,7 +52,9 @@ public class TimeConstantRL extends AppCompatActivity {
             }
             else{
                 result = n2/n1;
-                rl_result.setText(String.format("Time constant: %.3f",result) + " seconds");
+                DecimalFormat df = new DecimalFormat("#.#########");
+                result= Double.valueOf(df.format(result));
+                rl_result.setText("Time constant: "+result + " seconds");
             }
         }
     }

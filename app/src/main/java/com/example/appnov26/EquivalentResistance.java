@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 
 public class EquivalentResistance extends AppCompatActivity {
@@ -55,12 +57,14 @@ public class EquivalentResistance extends AppCompatActivity {
             n1=Double.valueOf(eqr_input1.getText().toString());
             n2=Double.valueOf(eqr_input2.getText().toString());
             if(n1==0||n2==0){
-                eqr_tv_result.setText("Eq. Resistance = 0.0 Ohms");
+                eqr_tv_result.setText("Eq. Resistance: 0.0 Ohms");
             }
             else{
                 double intermediate_result = 1/n1+1/n2;
                 result = 1/intermediate_result;
-                eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result)+" Ohms");
+                DecimalFormat df = new DecimalFormat("#.#########");
+                result= Double.valueOf(df.format(result));
+                eqr_tv_result.setText("Eq. Resistance: "+result+" Ohms");
             }
         }
     }
@@ -83,8 +87,9 @@ public class EquivalentResistance extends AppCompatActivity {
             n1=Double.valueOf(eqr_input1.getText().toString());
             n2=Double.valueOf(eqr_input2.getText().toString());
             result = n1+n2;
-
-            eqr_tv_result.setText(String.format("Eq. Resistance = %.3f",result) +" Ohms");
+            DecimalFormat df = new DecimalFormat("#.#########");
+            result= Double.valueOf(df.format(result));
+            eqr_tv_result.setText("Eq. Resistance: "+result+" Ohms");
         }
     }
 }

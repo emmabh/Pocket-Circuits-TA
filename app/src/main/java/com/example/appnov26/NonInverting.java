@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static android.text.TextUtils.isEmpty;
 
 public class NonInverting extends AppCompatActivity {
@@ -56,13 +58,18 @@ public class NonInverting extends AppCompatActivity {
                 ni_result.setText("R1 cannot be zero");
             else if(nf1==1){
                 result = 1+ n3/n2;
-                ni_result.setText(String.format("Gain: %.3f",result));
+                DecimalFormat df = new DecimalFormat("#.#########");
+                result= Double.valueOf(df.format(result));
+                ni_result.setText("Gain: "+result);
             }
             else{
                 n1 = Double.valueOf(ni_input1.getText().toString());
                 result = 1+ n3/n2;
                 double voutresult = n1*result;
-                ni_result.setText(String.format("Gain: %.3f",result) + String.format("\nVout: %.3f",voutresult) + " V");
+                DecimalFormat df = new DecimalFormat("#.#########");
+                result= Double.valueOf(df.format(result));
+                voutresult= Double.valueOf(df.format(voutresult));
+                ni_result.setText("Gain: "+result + "\nVout: "+voutresult + " V");
             }
 
         }

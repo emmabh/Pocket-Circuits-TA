@@ -8,6 +8,39 @@
 
 
     <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="R:"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_input3"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginRight="5dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="I:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_input2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="5dp" />
+
+    <TextView
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,13 +51,14 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="ice_cream_sandwich" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="198dp"
+        android:layout_width="250dp"
         android:layout_height="185dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="168dp"
         android:adjustViewBounds="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -36,7 +70,7 @@
         android:id="@+id/et_input1"
         android:layout_width="80dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
@@ -46,29 +80,29 @@
         android:selectAllOnFocus="false"
         android:singleLine="false"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/et_input2"
-        android:layout_marginRight="30dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/et_input2"
         android:layout_width="80dp"
         android:layout_height="45dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
         android:hint="Amps"
         android:inputType="numberSigned|numberDecimal"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/et_input3"
         android:layout_width="80dp"
         android:layout_height="45dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
@@ -76,9 +110,9 @@
         android:hint="Ohms"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/et_input2"
-        android:layout_marginLeft="30dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginRight="30dp" />
 
     <Button
         android:id="@+id/bt_calculate"
@@ -90,13 +124,14 @@
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:targetApi="ice_cream_sandwich" />
 
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="416dp"
+        android:layout_marginTop="500dp"
         android:fontFamily="@font/allerta_stencil"
         android:textAlignment="center"
         android:textColor="@android:color/holo_green_light"
@@ -105,7 +140,25 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="V:"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_input1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="5dp"
+        tools:targetApi="lollipop" />
 
 
 </android.support.constraint.ConstraintLayout>
