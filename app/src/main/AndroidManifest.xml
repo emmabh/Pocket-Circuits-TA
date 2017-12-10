@@ -46,10 +46,6 @@
             android:name=".Lab3Activity"
             android:label="@string/title_activity_lab3"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TheveninEquiv"
-            android:label="@string/title_activity_thevenin_equiv"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".OpAmpDiagram"
             android:screenOrientation="portrait" />
         <activity android:name=".Lab4Activity" />
