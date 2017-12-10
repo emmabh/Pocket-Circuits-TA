@@ -32,11 +32,10 @@
         android:fontFamily="@font/allerta_stencil"
         android:gravity="end"
         android:hint="Ohms"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        android:layout_marginRight="50dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/et_eqr_input2"
@@ -48,11 +47,10 @@
         android:ems="10"
         android:fontFamily="@font/allerta_stencil"
         android:hint="Ohms"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        android:layout_marginRight="30dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/bt_paral_calculate"
