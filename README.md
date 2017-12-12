@@ -1,4 +1,4 @@
-# AppTest2
+# Pocket-Circuits-TA
   This application was created to assist students at Boston Univeristy in their introductory circuits laboratory. It includes a tool set  for each lab. Some of the tools are diagrams, and others are supplemental calculators. The student simply clicks on whichever lab he or
 she is doing, and then he or she can choose the appropriate tool to use.
 
